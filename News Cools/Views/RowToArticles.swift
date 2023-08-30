@@ -11,7 +11,7 @@ struct RowToArticles: View {
   let articles: Articles
   var relativeDateString: String {
     let formaterStringToDate = ISO8601DateFormatter()
-    let date = formaterStringToDate.date(from: articles.publishedAt)
+    let date = formaterStringToDate.date(from: articles.publishedAt ?? "")
     let formatter = RelativeDateTimeFormatter()
     formatter.unitsStyle = .full
     let relativeDate = formatter.localizedString(for: date ?? Date(), relativeTo: Date())
@@ -22,7 +22,7 @@ struct RowToArticles: View {
     HStack {
       VStack {
         HStack {
-          Text(articles.source.name)
+          Text(articles.source?.name ?? "")
             .font(.custom(FontsApp.robotoLight, size: 11))
             .foregroundColor(ColorsApp.white)
           Spacer()
@@ -31,7 +31,7 @@ struct RowToArticles: View {
             .foregroundColor(ColorsApp.white)
         }
 
-        Text(articles.title)
+        Text(articles.title ?? "")
           .lineLimit(2)
           .fontWithLineHeight(font: UIFont(name: FontsApp.robotoRegular, size: 15)!, lineHeight: 23)
           .foregroundColor(ColorsApp.white)

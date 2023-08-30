@@ -14,4 +14,7 @@ struct ColorsApp {
   static let primary = Color("primary")
   static let secondary = Color("secondary")
   static let white = Color("white")
+  static let placeholderDark = Color("placeholderDark")
+  static let placeholderLight = Color("placeholderLight")
+  static let whiteAnyApperance = Color("whiteAnyApperance")
 }
