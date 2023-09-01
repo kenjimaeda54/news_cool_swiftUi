@@ -2,11 +2,13 @@
 //  Mockable.swift
 //  News Cools_UITests
 //
-//  Created by kenjimaeda on 30/08/23.
+//  Created by kenjimaeda on 01/09/23.
 //
 
 import Foundation
 
+// cuidado a implementação do extesion Mockable precisa ser identico ao Mockable
+// se não ira exigir a implementação desse protocolo onde ele for usado como HttProtocolMock
 protocol Mockable: AnyObject {
   var bundle: Bundle { get }
   func loadJson<T: Decodable>(filename: String, type: T.Type) -> T
@@ -19,7 +21,7 @@ extension Mockable {
 
   func loadJson<T: Decodable>(filename: String, type: T.Type) -> T {
     guard let path = bundle.url(forResource: filename, withExtension: "json") else {
-      fatalError("Failed to load JSON file")
+      fatalError("Failed to load Json file")
     }
 
     do {
@@ -27,8 +29,7 @@ extension Mockable {
       let decodeObject = try JSONDecoder().decode(T.self, from: data)
       return decodeObject
     } catch {
-      print(error.localizedDescription)
-      fatalError("Failed to decode json")
+      fatalError("Failed decode json")
     }
   }
 }

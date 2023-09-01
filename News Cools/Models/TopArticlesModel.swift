@@ -15,9 +15,8 @@ struct TopArticlesModel: Codable {
 
 // forma de lidar com estruras de API que não possui id
 // ja inicializo um id pra ele
-struct Articles: Codable, Identifiable {
-  var id = UUID()
-  let source: Source?
+struct Articles: Codable {
+  let source: Source
   let author: String?
   let title: String?
   let description: String?
@@ -28,6 +27,6 @@ struct Articles: Codable, Identifiable {
 }
 
 struct Source: Codable {
-  let id: String
-  let name: String
+  let id: String?
+  let name: String?
 }

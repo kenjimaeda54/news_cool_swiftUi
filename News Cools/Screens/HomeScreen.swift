@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeScreen: View {
+  @StateObject private var storeArticles = StoreTopArticle()
+
   var body: some View {
     VStack(alignment: .leading, spacing: 0) {
       Text("Explore")
@@ -30,20 +32,35 @@ struct HomeScreen: View {
         .foregroundColor(ColorsApp.white)
         .padding(EdgeInsets(top: 10, leading: 13, bottom: 10, trailing: 13))
 
-      List(topArticlesMock.articles) { articles in
-        RowToArticles(articles: articles)
-          .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
-          .listRowSeparator(.hidden)
-          // hacker pra deixar o background transparente das rows
-          .listRowBackground(ColorsApp.primary.opacity(0.0))
+      switch storeArticles.loading {
+      case .success:
+        List(storeArticles.articles) { topArticles in
+          if (topArticles.articles.title) != nil {
+            RowToArticles(articles: topArticles.articles)
+              .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+              .listRowSeparator(.hidden)
+              // hacker pra deixar o background transparente das rows
+              .listRowBackground(ColorsApp.primary.opacity(0.0))
+          }
+        }
+        .listStyle(.inset)
+        .scrollIndicators(.hidden)
+        .padding(EdgeInsets(top: 10, leading: 13, bottom: 10, trailing: 13))
+
+      case .loading:
+        Text("Loading")
+
+      default:
+        Text("error")
       }
-      .listStyle(.inset)
-      .padding(EdgeInsets(top: 10, leading: 13, bottom: 10, trailing: 13))
     }
 
     .scrollBounceBehavior(.basedOnSize)
     .scrollContentBackground(.hidden)
     .background(ColorsApp.primary, ignoresSafeAreaEdges: .all)
+    .task {
+      await storeArticles.fetchTopArticles()
+    }
   }
 }
 

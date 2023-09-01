@@ -22,7 +22,7 @@ struct RowToArticles: View {
     HStack {
       VStack {
         HStack {
-          Text(articles.source?.name ?? "")
+          Text(articles.source.name ?? "")
             .font(.custom(FontsApp.robotoLight, size: 11))
             .foregroundColor(ColorsApp.white)
           Spacer()
