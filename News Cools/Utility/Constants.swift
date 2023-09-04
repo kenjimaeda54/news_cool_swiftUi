@@ -14,3 +14,10 @@ let rowSpacing: CGFloat = 13
 var gridItemExplore: [GridItem] {
   return Array(repeating: GridItem(.flexible(), spacing: rowSpacing), count: 1)
 }
+
+enum TestsIdentifier {
+  static var rowCategories = "gridCategories"
+  static var rowArticles = "rowArticles"
+  static var listArticles = "listArticles"
+  static var gridCategories = "gridCategories"
+}

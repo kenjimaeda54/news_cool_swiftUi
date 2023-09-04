@@ -21,8 +21,10 @@ struct HomeScreen: View {
         LazyHGrid(rows: gridItemExplore) {
           ForEach(listCategoriesMock) { categorie in
             RowToCategories(category: categorie)
+              .accessibilityIdentifier("\(TestsIdentifier.rowCategories)_\(categorie.id)")
           }
         }
+        .accessibilityIdentifier(TestsIdentifier.gridCategories)
       }
       .padding(EdgeInsets(top: 10, leading: 13, bottom: 10, trailing: 0))
       .frame(height: 130)
@@ -35,20 +37,24 @@ struct HomeScreen: View {
       switch storeArticles.loading {
       case .success:
         List(storeArticles.articles) { topArticles in
-          if (topArticles.articles.title) != nil {
+          if topArticles.articles.title != nil && topArticles.articles.title != "[Removed]" && topArticles.articles
+            .urlToImage != nil
+          {
             RowToArticles(articles: topArticles.articles)
               .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
               .listRowSeparator(.hidden)
               // hacker pra deixar o background transparente das rows
               .listRowBackground(ColorsApp.primary.opacity(0.0))
+              .accessibilityIdentifier("\(TestsIdentifier.rowArticles)_\(topArticles.id)")
           }
         }
         .listStyle(.inset)
         .scrollIndicators(.hidden)
         .padding(EdgeInsets(top: 10, leading: 13, bottom: 10, trailing: 13))
+        .accessibilityIdentifier(TestsIdentifier.listArticles)
 
       case .loading:
-        Text("Loading")
+        PlaceHolderListArticles()
 
       default:
         Text("error")

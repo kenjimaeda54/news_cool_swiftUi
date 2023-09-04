@@ -10,12 +10,7 @@ import SwiftUI
 struct RowToArticles: View {
   let articles: Articles
   var relativeDateString: String {
-    let formaterStringToDate = ISO8601DateFormatter()
-    let date = formaterStringToDate.date(from: articles.publishedAt ?? "")
-    let formatter = RelativeDateTimeFormatter()
-    formatter.unitsStyle = .full
-    let relativeDate = formatter.localizedString(for: date ?? Date(), relativeTo: Date())
-    return relativeDate
+    return returnDateStringRelative(articles.publishedAt ?? "")
   }
 
   var body: some View {
@@ -33,7 +28,10 @@ struct RowToArticles: View {
 
         Text(articles.title ?? "")
           .lineLimit(2)
-          .fontWithLineHeight(font: UIFont(name: FontsApp.robotoRegular, size: 15)!, lineHeight: 23)
+          .fontWithLineHeight(
+            font: UIFont(name: FontsApp.robotoRegular, size: 15) ?? .boldSystemFont(ofSize: 20),
+            lineHeight: 23
+          )
           .foregroundColor(ColorsApp.white)
       }
       .padding(EdgeInsets(top: 3, leading: 10, bottom: 3, trailing: 10))
@@ -69,7 +67,7 @@ struct RowToArticles: View {
 
 struct RowToArticles_Previews: PreviewProvider {
   static var previews: some View {
-    RowToArticles(articles: topArticlesMock.articles[1])
+    RowToArticles(articles: topArticlesMock[1].articles)
       .previewLayout(.sizeThatFits)
   }
 }

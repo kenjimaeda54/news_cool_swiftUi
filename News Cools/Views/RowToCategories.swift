@@ -24,6 +24,7 @@ struct RowToCategories: View {
           PlaceHolderImageCategory()
         }
       }
+      .accessibilityIdentifier(category.urlImage)
       Text(category.title)
         .font(.custom(FontsApp.robotoBold, size: 12))
         .foregroundColor(ColorsApp.whiteAnyApperance)

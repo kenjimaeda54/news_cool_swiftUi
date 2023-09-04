@@ -26,7 +26,7 @@ public struct RedactAndShimmerView: ViewModifier {
   }
 }
 
-public extension View {
+extension View {
   func redactShimmer(condition: Bool) -> some View {
     modifier(RedactAndShimmerView(condition: condition))
   }
