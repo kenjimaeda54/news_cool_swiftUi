@@ -37,7 +37,9 @@ final class News_Cools_UITests: XCTestCase {
     XCTAssertTrue(exists)
 
     let predicateRow = NSPredicate(format: "identifier CONTAINS '\(TestsIdentifier.rowArticles)_'")
-    // peguei imagem porque apenas possui uma imagem no predicateRow
+    // peguei imagem p/Users/kenjimaeda/Documents/projects_IOS/News Cools/News
+    // Cools_UITests/UiTesting/UiTestingHomeScreen/HomeScreen_UITests.swiftorque apenas possui uma imagem no
+    // predicateRow
     let rows = list.images.containing(predicateRow)
     XCTAssertEqual(rows.count, 2)
   }
@@ -52,6 +54,17 @@ final class News_Cools_UITests: XCTestCase {
     let rows = grid.staticTexts.containing(predicateRow)
     XCTAssertEqual(rows.count, listCategoriesMock.count)
   }
+
+  func testValueTextFieldWhenTap() {
+    let predicateTextField = NSPredicate(format: "identifier == '\(TestsIdentifier.textFieldSearchNews)'")
+    let textField = app.descendants(matching: .any).matching(predicateTextField).firstMatch
+    textField.tap()
+    textField.typeText("Apple")
+
+    XCTAssertEqual(textField.value as? String, "Apple")
+  }
+
+  // MARK: - Teste snashopt
 
   // referencia test com snapshot
   // https://www.kodeco.com/24426963-snapshot-testing-tutorial-for-swiftui-getting-started

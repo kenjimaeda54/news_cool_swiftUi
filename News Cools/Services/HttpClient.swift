@@ -1,8 +1,8 @@
 //
-//  TopArticlesServices.swift
+//  HttpClient.swift
 //  News Cools
 //
-//  Created by kenjimaeda on 30/08/23.
+//  Created by kenjimaeda on 05/09/23.
 //
 
 import Foundation
@@ -16,7 +16,11 @@ enum HttpError: Error {
 }
 
 class HttpClient: HttpClientProtocol {
-  func fetch<T: Codable>(url: URL) async throws -> T {
+  func fetch<T: Codable>(urlString: String) async throws -> T {
+    guard let url = URL(string: urlString) else {
+      throw HttpError.badURL
+    }
+
     let (data, response) = try await URLSession.shared.data(from: url)
 
     guard (response as? HTTPURLResponse)?.statusCode == 200 else {

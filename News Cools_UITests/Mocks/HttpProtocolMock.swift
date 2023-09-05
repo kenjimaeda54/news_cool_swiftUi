@@ -7,8 +7,10 @@
 
 import Foundation
 
-final class MockHttpClient: HttpClientProtocol, Mockable {
-  func fetch<T: Codable>(url: URL) async throws -> T {
-    return loadJson(filename: "TopArticles", type: T.self)
+final class MockHttpClient: HttpClientProtocol, Mockable, ObservableObject {
+  @Published var fileName = "TopArticles"
+
+  func fetch<T>(urlString: String) async throws -> T where T: Decodable, T: Encodable {
+    return loadJson(filename: fileName, type: T.self)
   }
 }

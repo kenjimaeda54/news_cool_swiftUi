@@ -20,4 +20,5 @@ enum TestsIdentifier {
   static var rowArticles = "rowArticles"
   static var listArticles = "listArticles"
   static var gridCategories = "gridCategories"
+  static var textFieldSearchNews = "textFieldSearchNews"
 }

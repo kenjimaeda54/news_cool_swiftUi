@@ -8,5 +8,5 @@
 import Foundation
 
 protocol HttpClientProtocol {
-  func fetch<T: Codable>(url: URL) async throws -> T
+  func fetch<T: Codable>(urlString: String) async throws -> T
 }

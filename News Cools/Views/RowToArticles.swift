@@ -46,7 +46,7 @@ struct RowToArticles: View {
           image
             .resizable()
             .cornerRadius(5)
-            .frame(width: 130)
+            .frame(width: 130, height: 100)
             .aspectRatio(contentMode: .fill)
 
         } else {

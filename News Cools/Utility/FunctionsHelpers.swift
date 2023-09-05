@@ -15,3 +15,13 @@ func returnDateStringRelative(_ date: String) -> String {
   let relativeDate = formatter.localizedString(for: date ?? Date(), relativeTo: Date())
   return relativeDate
 }
+
+func returnMonthLast() -> String {
+  let dateFormatter = DateFormatter()
+  dateFormatter.dateFormat = "yyyy-MM-dd"
+
+  guard let date = Calendar.current.date(byAdding: .month, value: -1, to: Date()) else {
+    return dateFormatter.string(from: Date())
+  }
+  return dateFormatter.string(from: date)
+}
