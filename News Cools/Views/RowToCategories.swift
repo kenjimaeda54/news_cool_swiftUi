@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RowToCategories: View {
   let category: ExploreModel
+  let categoryIdSelected: String
 
   var body: some View {
     ZStack {
@@ -28,12 +29,14 @@ struct RowToCategories: View {
       Text(category.title)
         .font(.custom(FontsApp.robotoBold, size: 12))
         .foregroundColor(ColorsApp.whiteAnyApperance)
+        .accessibilityIdentifier(category.title)
     }
+    .opacity(category.id == categoryIdSelected ? 1 : 0.3)
   }
 }
 
 struct RowToCategories_Previews: PreviewProvider {
   static var previews: some View {
-    RowToCategories(category: listCategoriesMock[0])
+    RowToCategories(category: listCategoriesMock[0], categoryIdSelected: UUID().uuidString)
   }
 }

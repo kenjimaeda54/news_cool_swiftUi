@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810392712AA8918C00948656 /* HttpClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810392702AA8918C00948656 /* HttpClientFactory.swift */; };
+		810392722AA892D300948656 /* HttpClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810392702AA8918C00948656 /* HttpClientFactory.swift */; };
+		8103927A2AA8974500948656 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 810392792AA8974500948656 /* ViewInspector */; };
+		8103927C2AA9288900948656 /* CategoryArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = 8103927B2AA9288900948656 /* CategoryArticles.json */; };
+		8103927D2AA9288900948656 /* CategoryArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = 8103927B2AA9288900948656 /* CategoryArticles.json */; };
 		81039EF12A9FE3FC00B7F29C /* TopArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = 81039EF02A9FE3FC00B7F29C /* TopArticles.json */; };
 		81039EF62A9FF17C00B7F29C /* TopArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA118F2A9D49FF00CBD092 /* TopArticlesModel.swift */; };
 		81039EFD2AA0111C00B7F29C /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81039EFC2AA0111C00B7F29C /* LoadingState.swift */; };
@@ -42,8 +47,9 @@
 		81C067AC2A9D3BC100869C68 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C067AB2A9D3BC100869C68 /* HomeScreen.swift */; };
 		81C067AE2A9D3BC200869C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C067AD2A9D3BC200869C68 /* Assets.xcassets */; };
 		81C067B12A9D3BC200869C68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C067B02A9D3BC200869C68 /* Preview Assets.xcassets */; };
-		81C9AB8A2AA7B15900D6E555 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C9AB892AA7B15900D6E555 /* HttpClient.swift */; };
-		81C9AB8B2AA7B1FF00D6E555 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C9AB892AA7B15900D6E555 /* HttpClient.swift */; };
+		81C9AB8F2AA7F44B00D6E555 /* StoreHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C9AB8E2AA7F44B00D6E555 /* StoreHome.swift */; };
+		81C9AB902AA7FD4600D6E555 /* StoreHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C9AB8E2AA7F44B00D6E555 /* StoreHome.swift */; };
+		81C9AB942AA804CD00D6E555 /* MockHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC37A2AA21653000B8C12 /* MockHttpClient.swift */; };
 		81CA116E2A9D43DC00CBD092 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA116D2A9D43DC00CBD092 /* Colors.swift */; };
 		81CA117C2A9D452600CBD092 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CA11702A9D452600CBD092 /* Roboto-ThinItalic.ttf */; };
 		81CA117D2A9D452600CBD092 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CA11712A9D452600CBD092 /* Roboto-Light.ttf */; };
@@ -60,17 +66,14 @@
 		81CA118A2A9D45DD00CBD092 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA11892A9D45DD00CBD092 /* Fonts.swift */; };
 		81CA11902A9D49FF00CBD092 /* TopArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA118F2A9D49FF00CBD092 /* TopArticlesModel.swift */; };
 		81CA11932A9D4B2500CBD092 /* topArticlesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA11922A9D4B2500CBD092 /* topArticlesMock.swift */; };
-		81CAC3732AA208B8000B8C12 /* HttpClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC3722AA208B8000B8C12 /* HttpClientFactory.swift */; };
-		81CAC3742AA208E4000B8C12 /* HttpClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC3722AA208B8000B8C12 /* HttpClientFactory.swift */; };
 		81CAC3772AA20B2A000B8C12 /* TopArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = 81039EF02A9FE3FC00B7F29C /* TopArticles.json */; };
-		81CAC37B2AA21653000B8C12 /* HttpProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC37A2AA21653000B8C12 /* HttpProtocolMock.swift */; };
+		81CAC37B2AA21653000B8C12 /* MockHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC37A2AA21653000B8C12 /* MockHttpClient.swift */; };
 		81CAC37D2AA216D5000B8C12 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC37C2AA216D5000B8C12 /* Mockable.swift */; };
 		81CAC37F2AA21825000B8C12 /* HttpClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC37E2AA21825000B8C12 /* HttpClientProtocol.swift */; };
 		81CAC3802AA219C1000B8C12 /* HttpClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC37E2AA21825000B8C12 /* HttpClientProtocol.swift */; };
-		81CAC3822AA219EF000B8C12 /* TopArticlesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC3812AA219EF000B8C12 /* TopArticlesServices.swift */; };
-		81CAC3832AA21B38000B8C12 /* HttpProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC37A2AA21653000B8C12 /* HttpProtocolMock.swift */; };
+		81CAC3822AA219EF000B8C12 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC3812AA219EF000B8C12 /* HttpClient.swift */; };
 		81CAC3842AA21B4F000B8C12 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC37C2AA216D5000B8C12 /* Mockable.swift */; };
-		81CAC3862AA21ECB000B8C12 /* TopArticlesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC3812AA219EF000B8C12 /* TopArticlesServices.swift */; };
+		81CAC3862AA21ECB000B8C12 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC3812AA219EF000B8C12 /* HttpClient.swift */; };
 		81CAC3892AA267C7000B8C12 /* FunctionsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC3882AA267C7000B8C12 /* FunctionsHelpers.swift */; };
 		81CAC38A2AA2688A000B8C12 /* FunctionsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC3882AA267C7000B8C12 /* FunctionsHelpers.swift */; };
 		81CAC38B2AA26909000B8C12 /* listCategoriesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF122E2A9E172C007DE143 /* listCategoriesMock.swift */; };
@@ -90,6 +93,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		810392702AA8918C00948656 /* HttpClientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HttpClientFactory.swift; path = "News Cools/Factories/HttpClientFactory.swift"; sourceTree = SOURCE_ROOT; };
+		8103927B2AA9288900948656 /* CategoryArticles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CategoryArticles.json; sourceTree = "<group>"; };
 		81039EDF2A9FCFF600B7F29C /* News Cools_UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "News Cools_UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81039EE12A9FCFF600B7F29C /* HomeScreen_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen_UITests.swift; sourceTree = "<group>"; };
 		81039EF02A9FE3FC00B7F29C /* TopArticles.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = TopArticles.json; sourceTree = "<group>"; };
@@ -113,7 +118,7 @@
 		81C067AB2A9D3BC100869C68 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		81C067AD2A9D3BC200869C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81C067B02A9D3BC200869C68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		81C9AB892AA7B15900D6E555 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		81C9AB8E2AA7F44B00D6E555 /* StoreHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreHome.swift; sourceTree = "<group>"; };
 		81CA116D2A9D43DC00CBD092 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		81CA11702A9D452600CBD092 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		81CA11712A9D452600CBD092 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
@@ -131,11 +136,11 @@
 		81CA11892A9D45DD00CBD092 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		81CA118F2A9D49FF00CBD092 /* TopArticlesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArticlesModel.swift; sourceTree = "<group>"; };
 		81CA11922A9D4B2500CBD092 /* topArticlesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topArticlesMock.swift; sourceTree = "<group>"; };
-		81CAC3722AA208B8000B8C12 /* HttpClientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientFactory.swift; sourceTree = "<group>"; };
-		81CAC37A2AA21653000B8C12 /* HttpProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpProtocolMock.swift; sourceTree = "<group>"; };
+		81CA77A62AA9FECE001ED869 /* News Cools.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "News Cools.xctestplan"; sourceTree = "<group>"; };
+		81CAC37A2AA21653000B8C12 /* MockHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHttpClient.swift; sourceTree = "<group>"; };
 		81CAC37C2AA216D5000B8C12 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
 		81CAC37E2AA21825000B8C12 /* HttpClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientProtocol.swift; sourceTree = "<group>"; };
-		81CAC3812AA219EF000B8C12 /* TopArticlesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArticlesServices.swift; sourceTree = "<group>"; };
+		81CAC3812AA219EF000B8C12 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		81CAC3882AA267C7000B8C12 /* FunctionsHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8198853D2AA277FD00711225 /* SnapshotTesting in Frameworks */,
+				8103927A2AA8974500948656 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +164,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8103926F2AA8917700948656 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				810392702AA8918C00948656 /* HttpClientFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		81039EE02A9FCFF600B7F29C /* News Cools_UITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,8 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				81CAC37E2AA21825000B8C12 /* HttpClientProtocol.swift */,
-				81CAC3812AA219EF000B8C12 /* TopArticlesServices.swift */,
-				81C9AB892AA7B15900D6E555 /* HttpClient.swift */,
+				81CAC3812AA219EF000B8C12 /* HttpClient.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -265,6 +278,7 @@
 		81C0679D2A9D3BC100869C68 = {
 			isa = PBXGroup;
 			children = (
+				81CA77A62AA9FECE001ED869 /* News Cools.xctestplan */,
 				81C067A82A9D3BC100869C68 /* News Cools */,
 				81039EE02A9FCFF600B7F29C /* News Cools_UITests */,
 				81C067A72A9D3BC100869C68 /* Products */,
@@ -284,11 +298,13 @@
 		81C067A82A9D3BC100869C68 /* News Cools */ = {
 			isa = PBXGroup;
 			children = (
+				8103926F2AA8917700948656 /* Factory */,
+				81C9AB8C2AA7F1DF00D6E555 /* Store */,
+				81AF12282A9E05EF007DE143 /* Modifiers */,
 				81C9AB862AA7AD4600D6E555 /* ViewModel */,
 				81CAC3712AA2089A000B8C12 /* Factories */,
 				81039EEB2A9FDD3B00B7F29C /* Services */,
 				81AF122B2A9E16D8007DE143 /* Utility */,
-				81AF12282A9E05EF007DE143 /* Modifiers */,
 				81AF12272A9E055D007DE143 /* Extensions */,
 				81CA11912A9D4AF700CBD092 /* Mock */,
 				81CA118D2A9D47CC00CBD092 /* Views */,
@@ -316,6 +332,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		81C9AB8C2AA7F1DF00D6E555 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				81C9AB8E2AA7F44B00D6E555 /* StoreHome.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 		81CA116C2A9D43C500CBD092 /* Themes */ = {
@@ -387,7 +411,6 @@
 		81CAC3712AA2089A000B8C12 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				81CAC3722AA208B8000B8C12 /* HttpClientFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -395,10 +418,11 @@
 		81CAC3872AA25E7C000B8C12 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				81CAC37A2AA21653000B8C12 /* HttpProtocolMock.swift */,
+				81CAC37A2AA21653000B8C12 /* MockHttpClient.swift */,
 				81CAC37C2AA216D5000B8C12 /* Mockable.swift */,
 				81039EF02A9FE3FC00B7F29C /* TopArticles.json */,
 				815C869D2AA5F5F1001A9483 /* FilterArticles.json */,
+				8103927B2AA9288900948656 /* CategoryArticles.json */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -422,6 +446,7 @@
 			name = "News Cools_UITests";
 			packageProductDependencies = (
 				8198853C2AA277FD00711225 /* SnapshotTesting */,
+				810392792AA8974500948656 /* ViewInspector */,
 			);
 			productName = "News Cools_UITests";
 			productReference = 81039EDF2A9FCFF600B7F29C /* News Cools_UITests.xctest */;
@@ -478,6 +503,7 @@
 			mainGroup = 81C0679D2A9D3BC100869C68;
 			packageReferences = (
 				819885362AA2771000711225 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				810392762AA8973900948656 /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
 			productRefGroup = 81C067A72A9D3BC100869C68 /* Products */;
 			projectDirPath = "";
@@ -494,6 +520,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8103927D2AA9288900948656 /* CategoryArticles.json in Resources */,
 				819885582AA2A9DF00711225 /* rowToCategoriesTest.png in Resources */,
 				81039EF12A9FE3FC00B7F29C /* TopArticles.json in Resources */,
 				815C869B2AA5F0EE001A9483 /* homeScreenTest.png in Resources */,
@@ -521,6 +548,7 @@
 				81CA11842A9D452600CBD092 /* Roboto-Medium.ttf in Resources */,
 				81CA11862A9D452600CBD092 /* Roboto-Regular.ttf in Resources */,
 				81CA117D2A9D452600CBD092 /* Roboto-Light.ttf in Resources */,
+				8103927C2AA9288900948656 /* CategoryArticles.json in Resources */,
 				81C067AE2A9D3BC200869C68 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,21 +605,21 @@
 				81039EF62A9FF17C00B7F29C /* TopArticlesModel.swift in Sources */,
 				819885422AA2792800711225 /* topArticlesMock.swift in Sources */,
 				81CAC38A2AA2688A000B8C12 /* FunctionsHelpers.swift in Sources */,
-				81CAC37B2AA21653000B8C12 /* HttpProtocolMock.swift in Sources */,
+				81CAC37B2AA21653000B8C12 /* MockHttpClient.swift in Sources */,
 				81CAC3802AA219C1000B8C12 /* HttpClientProtocol.swift in Sources */,
 				819885592AA2AA1300711225 /* RowToCategories.swift in Sources */,
 				815C869C2AA5F17C001A9483 /* HomeScreen.swift in Sources */,
-				81C9AB8B2AA7B1FF00D6E555 /* HttpClient.swift in Sources */,
 				81CAC38D2AA26BF8000B8C12 /* Constants.swift in Sources */,
-				81CAC3862AA21ECB000B8C12 /* TopArticlesServices.swift in Sources */,
+				81CAC3862AA21ECB000B8C12 /* HttpClient.swift in Sources */,
 				8198855C2AA2AB4A00711225 /* Shimmer.swift in Sources */,
 				819885492AA27BA300711225 /* FontWithLineHeight.swift in Sources */,
 				81CD133A2AA02337001F1855 /* LoadingState.swift in Sources */,
 				81CAC38C2AA26933000B8C12 /* ExploreModel.swift in Sources */,
 				819885442AA27AEC00711225 /* HomeScreen_UITests.swift in Sources */,
+				810392722AA892D300948656 /* HttpClientFactory.swift in Sources */,
 				819885462AA27B7B00711225 /* RowToArticles.swift in Sources */,
 				8198855A2AA2AA8F00711225 /* PlaceHolders.swift in Sources */,
-				81CAC3742AA208E4000B8C12 /* HttpClientFactory.swift in Sources */,
+				81C9AB902AA7FD4600D6E555 /* StoreHome.swift in Sources */,
 				811D8A2B2AA0AAA200FDFBA5 /* ArticlesIdentifiableModel.swift in Sources */,
 				819885482AA27B9700711225 /* Fonts.swift in Sources */,
 				81CAC38B2AA26909000B8C12 /* listCategoriesMock.swift in Sources */,
@@ -602,17 +630,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C9AB942AA804CD00D6E555 /* MockHttpClient.swift in Sources */,
 				811D8A2A2AA0A56800FDFBA5 /* ArticlesIdentifiableModel.swift in Sources */,
 				81CAC3892AA267C7000B8C12 /* FunctionsHelpers.swift in Sources */,
 				8120FBF62A9F6B600016F335 /* RowToCategories.swift in Sources */,
-				81CAC3832AA21B38000B8C12 /* HttpProtocolMock.swift in Sources */,
 				81CA11902A9D49FF00CBD092 /* TopArticlesModel.swift in Sources */,
 				81CA118A2A9D45DD00CBD092 /* Fonts.swift in Sources */,
 				81B7AE782A9E022500B4AC9F /* RowToArticles.swift in Sources */,
 				81CAC3842AA21B4F000B8C12 /* Mockable.swift in Sources */,
-				81CAC3822AA219EF000B8C12 /* TopArticlesServices.swift in Sources */,
+				81C9AB8F2AA7F44B00D6E555 /* StoreHome.swift in Sources */,
+				81CAC3822AA219EF000B8C12 /* HttpClient.swift in Sources */,
 				81AF122F2A9E172C007DE143 /* listCategoriesMock.swift in Sources */,
-				81C9AB8A2AA7B15900D6E555 /* HttpClient.swift in Sources */,
 				81CA116E2A9D43DC00CBD092 /* Colors.swift in Sources */,
 				8120FBF02A9F662F0016F335 /* RedactAndShimerView.swift in Sources */,
 				81AF12312A9E1851007DE143 /* Constants.swift in Sources */,
@@ -621,8 +649,8 @@
 				8120FBF22A9F66F10016F335 /* Shimmer.swift in Sources */,
 				81C067AC2A9D3BC100869C68 /* HomeScreen.swift in Sources */,
 				81CAC37F2AA21825000B8C12 /* HttpClientProtocol.swift in Sources */,
-				81CAC3732AA208B8000B8C12 /* HttpClientFactory.swift in Sources */,
 				81CA11932A9D4B2500CBD092 /* topArticlesMock.swift in Sources */,
+				810392712AA8918C00948656 /* HttpClientFactory.swift in Sources */,
 				81C067AA2A9D3BC100869C68 /* News_CoolsApp.swift in Sources */,
 				81AF122A2A9E0610007DE143 /* FontWithLineHeight.swift in Sources */,
 				81AF12332A9E1918007DE143 /* ExploreModel.swift in Sources */,
@@ -883,6 +911,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		810392762AA8973900948656 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.8;
+			};
+		};
 		819885362AA2771000711225 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
@@ -894,6 +930,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		810392792AA8974500948656 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 810392762AA8973900948656 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
 		8198853C2AA277FD00711225 /* SnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 819885362AA2771000711225 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;

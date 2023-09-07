@@ -1,0 +1,35 @@
+
+{
+	"status": "ok",
+	"totalResults": 31,
+	"articles": [
+		{
+					"source": {
+						"id": null,
+						"name": "KTVU San Francisco"
+					},
+					"author": "Allie Rasmus",
+					"title": "California DMV expands digital driver's license program: How to sign up - KTVU FOX 2 San Francisco",
+					"description": "Ever wish you had your driver's license on your phone? If you live in California, now you can.",
+					"url": "https://www.ktvu.com/news/california-dmv-expands-digital-drivers-license-program-how-to-sign-up",
+					"urlToImage": "https://images.foxtv.com/m107833-mcdn.mp.lura.live/iupl/855/1E7/1280/720/8551E7BDE87AD884EAB34A99603AE866.jpg?Expires=2082758400&KeyName=mcpkey1&Signature=cM-aKcwYYLaG7zQ5KTCfLIW9ZS4&ve=1&tl=1",
+					"publishedAt": "2023-09-05T18:25:38Z",
+					"content": "OAKLAND, Calif. - Ever wish you had your driver's license on your phone? If you live in California, now you can. \r\nThe California DMV announced it has expanded its pilot program allowing drivers to g… [+2299 chars]"
+		},
+		{
+					"source": {
+						"id": "the-washington-post",
+						"name": "The Washington Post"
+					},
+					"author": "Heidi Pérez-Moreno, Lyric Li",
+					"title": "Air Canada passengers removed for refusing to sit on vomit-soiled seats - The Washington Post",
+					"description": "The airline has apologized to the two women who were taken off a flight from Las Vegas to Montreal last month.",
+					"url": "https://www.washingtonpost.com/travel/2023/09/05/air-canada-vomit-seat/",
+					"urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/57XRYOOX33LBZDQ26HNT3HDEUM_size-normalized.jpg&w=1440",
+					"publishedAt": "2023-09-05T17:54:52Z",
+					"content": "Comment on this story\r\nComment\r\nTwo travelers were kicked off an Air Canada flight after they refused to sit on seats that were soiled by vomit, according to a witness and local media.\r\nSusan Benson,… [+4114 chars]"
+		},
+	 
+	 
+	]
+}

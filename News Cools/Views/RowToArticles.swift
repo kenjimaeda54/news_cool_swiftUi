@@ -62,6 +62,7 @@ struct RowToArticles: View {
       RoundedRectangle(cornerRadius: 5)
         .foregroundColor(ColorsApp.secondary)
     )
+    .accessibilityIdentifier("\(TestsIdentifier.rowArticles)_")
   }
 }
 

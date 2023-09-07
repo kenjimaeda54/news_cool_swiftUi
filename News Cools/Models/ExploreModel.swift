@@ -8,7 +8,7 @@
 import Foundation
 
 struct ExploreModel: Identifiable {
-  let id = UUID()
+  let id: String
   let title: String
   let urlImage: String
 }

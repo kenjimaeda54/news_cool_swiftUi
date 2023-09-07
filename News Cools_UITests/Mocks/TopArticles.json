@@ -28,6 +28,45 @@
       "publishedAt": "2023-08-29T17:52:25Z",
       "content": "Two blood thinners and a diabetes medication are the most widely used among a list of ten drugs that will be subject to price negotiations between manufacturers and Medicare. \r\nThe Biden administrati… [+1942 chars]"
     },
+		{
+			"source": {
+				"id": null,
+				"name": "CNBC"
+			},
+			"author": "Annika Kim Constantino",
+			"title": "Here are the three most used drugs on the Medicare price negotiation list - CNBC",
+			"description": "The Biden administration unveiled the much-awaited list officially kicking off a process that aims to control rising drug costs in the U.S.",
+			"url": "https://www.cnbc.com/2023/08/29/most-used-drugs-on-medicare-price-negotiation-list-see-the-top-three.html",
+			"urlToImage": "https://image.cnbcfm.com/api/v1/image/107293363-16933291292020-01-09t000000z_1347972925_rc2nce9nx56i_rtrmadp_0_health-pharmacy.jpeg?v=1693331545&w=1920&h=1080",
+			"publishedAt": "2023-08-29T17:52:25Z",
+			"content": "Two blood thinners and a diabetes medication are the most widely used among a list of ten drugs that will be subject to price negotiations between manufacturers and Medicare. \r\nThe Biden administrati… [+1942 chars]"
+		},
+		{
+		"source": {
+		"id": null,
+		"name": "WPBF West Palm Beach"
+		},
+		"author": null,
+		"title": "National Hurricane Center tracking Tropical Depression 13 in Atlantic - WPBF West Palm Beach",
+		"description": "The National Weather Service’s National Hurricane Center Tuesday morning upgraded Invest 95-L to Tropical Depression 13 in the Atlantic Ocean.",
+		"url": "https://www.wpbf.com/article/florida-tracking-tropics/44999200",
+		"urlToImage": "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/img-4016-64f74473e7cc7.jpeg?crop=1.00xw:1.00xh;0,0&resize=1200:*",
+		"publishedAt": "2023-09-05T15:28:00Z",
+		"content": "Invest 95-Ls development in the Atlantic Ocean continues. The National Weather Services National Hurricane Center upgraded Invest 95-L to Tropical Depression 13 on Tuesday morning.\r\nAs of the 11 a.m.… [+552 chars]"
+		},
+		{
+		"source": {
+		"id": null,
+		"name": "Barron's"
+		},
+		"author": "Adam Clark",
+		"title": "Huawei's New Smartphone Shows China's Chip Progress. What It Means for Intel. - Barron's",
+		"description": "The latest smartphone from Huawei contains one of the most advanced chips yet from China’s domestic manufacturers.",
+		"url": "https://www.barrons.com/articles/intel-tsmc-stock-price-china-huawei-chips-e9d70703",
+		"urlToImage": "https://images.barrons.com/im-222173/social",
+		"publishedAt": "2023-09-05T15:28:00Z",
+		"content": null
+		},
    
   ]
 }

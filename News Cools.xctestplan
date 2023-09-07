@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "8F31E48D-5B3B-40BD-A43E-33FB8D28F8C7",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:News Cools.xcodeproj",
+          "identifier" : "81C067A52A9D3BC100869C68",
+          "name" : "News Cools"
+        }
+      ]
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:News Cools.xcodeproj",
+      "identifier" : "81C067A52A9D3BC100869C68",
+      "name" : "News Cools"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:News Cools.xcodeproj",
+        "identifier" : "81039EDE2A9FCFF600B7F29C",
+        "name" : "News Cools_UITests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -1,38 +1,92 @@
 //
-//  HttpClient.swift
+//  TopArticlesServices.swift
 //  News Cools
 //
-//  Created by kenjimaeda on 05/09/23.
+//  Created by kenjimaeda on 01/09/23.
 //
 
 import Foundation
 
-// referencia
-
-// https://github.com/codewithchris/YT-Vapor-iOS-App/blob/lesson-5/YT-Vapor-iOS-App/Utilities/HttpClient.swift
-
-enum HttpError: Error {
-  case badURL, badResponse, errorDecondinData, invalidURL, invalidRequest
-}
-
 class HttpClient: HttpClientProtocol {
-  func fetch<T: Codable>(urlString: String) async throws -> T {
-    guard let url = URL(string: urlString) else {
-      throw HttpError.badURL
+  func fetchCategoryArticles(
+    category: String,
+    completion: @escaping (Result<[ArticlesIdentifiableModel], HttpError>) -> Void
+  ) {
+    guard let url =
+      URL(
+        string: "https://newsapi.org/v2/top-headlines?country=us&category=\(category)&apiKey=e03da12b408445449464ceb16db4963a"
+      )
+    else {
+      return completion(.failure(.badURL))
     }
 
-    let (data, response) = try await URLSession.shared.data(from: url)
+    URLSession.shared.dataTask(with: url) { data, _, error in
 
-    guard (response as? HTTPURLResponse)?.statusCode == 200 else {
-      throw HttpError.badResponse
+      guard let data = data, error == nil else {
+        return completion(.failure(.noData))
+      }
+
+      do {
+        let response = try JSONDecoder().decode(TopArticlesModel.self, from: data)
+        let articlesIdentifible = response.articles
+          .map { ArticlesIdentifiableModel(id: UUID().uuidString, articles: $0) }
+        completion(.success(articlesIdentifible))
+      } catch {
+        completion(.failure(.errorEncodingData))
+      }
+    }.resume()
+  }
+
+  func fetchAllArticles(completion: @escaping (Result<[ArticlesIdentifiableModel], HttpError>) -> Void) {
+    guard let url =
+      URL(string: "https://newsapi.org/v2/top-headlines?country=us&apiKey=e03da12b408445449464ceb16db4963a")
+    else {
+      return completion(.failure(.badURL))
     }
 
-    do {
-      let object = try JSONDecoder().decode(T.self, from: data)
-      return object
+    URLSession.shared.dataTask(with: url) { data, _, error in
 
-    } catch {
-      throw HttpError.errorDecondinData
+      guard let data = data, error == nil else {
+        return completion(.failure(.noData))
+      }
+
+      do {
+        let response = try JSONDecoder().decode(TopArticlesModel.self, from: data)
+        let articlesIdentifible = response.articles
+          .map { ArticlesIdentifiableModel(id: UUID().uuidString, articles: $0) }
+        completion(.success(articlesIdentifible))
+      } catch {
+        completion(.failure(.errorEncodingData))
+      }
+    }.resume()
+  }
+
+  func fetchSearchArticles(
+    search: String,
+    completion: @escaping (Result<[ArticlesIdentifiableModel], HttpError>) -> Void
+  ) {
+    guard let url =
+      URL(
+        string: "https://newsapi.org/v2/everything?q=\(search)&from=\(returnMonthLast())&sortBy=popularity&apiKey=e03da12b408445449464ceb16db4963a"
+      )
+    else {
+      return completion(.failure(.badURL))
     }
+
+    URLSession.shared.dataTask(with: url) { data, _, error in
+
+      guard let data = data, error == nil else {
+        return completion(.failure(.noData))
+      }
+
+      do {
+        let response = try JSONDecoder().decode(TopArticlesModel.self, from: data)
+        let articlesIdentifible = response.articles
+          .map { ArticlesIdentifiableModel(id: UUID().uuidString, articles: $0) }
+        completion(.success(articlesIdentifible))
+      } catch {
+        completion(.failure(.errorEncodingData))
+      }
+    }.resume()
   }
 }

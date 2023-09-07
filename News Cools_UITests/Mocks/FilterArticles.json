@@ -17,6 +17,19 @@
 				"content": "Summer is Fading away, and school will soon be back in session. We scoured the internet for the best discounts on gadgets and gear for teachers, students, parents, and anyone else in the market for b… [+13264 chars]"
 		},
 		{
+				"source": {
+					"id": "business-insider",
+					"name": "Business Insider"
+				},
+				"author": "Huileng Tan",
+				"title": "The founder of Apple's key supplier said the US stock market would collapse in '10 seconds' if war breaks out in Taiwan. He deleted the comment within hours of posting it.",
+				"description": "Foxconn founder Terry Gou's post appears to have been deleted by Thursday morning, although a cached copy of the post is still available.",
+				"url": "https://markets.businessinsider.com/news/stocks/apple-foxconn-terry-gou-us-stock-market-crash-taiwan-war-2023-8",
+				"urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230905101929-russia-oil-refinery-1027-file-restricted.jpg?c=16x9&q=w_800,c_fill",
+				"publishedAt": "2023-08-03T12:43:41Z",
+				"content": "Terry Gou, founder of Foxconn — a key supplier to Apple — warned of a US stock market collapse should war break out over Taiwan.Visual China Group/Getty Images)\r\n<ul>\n<li>Foxconn founder Terry Gou sa… [+2382 chars]"
+		},
+		{
 			 "source": {
 				 "id": "ars-technica",
 				 "name": "Ars Technica"
@@ -29,19 +42,6 @@
 			 "publishedAt": "2023-08-03T22:22:14Z",
 			 "content": "3 with \r\nEven the people who spent money on Meta's Ray-Ban Stories smart glasses don't want to use them. That's according to a report this week from the Wall Street Journal (WSJ), citing internal d… [+4637 chars]"
 		},
-		{
-				"source": {
-					"id": "business-insider",
-					"name": "Business Insider"
-				},
-				"author": "Huileng Tan",
-				"title": "The founder of Apple's key supplier said the US stock market would collapse in '10 seconds' if war breaks out in Taiwan. He deleted the comment within hours of posting it.",
-				"description": "Foxconn founder Terry Gou's post appears to have been deleted by Thursday morning, although a cached copy of the post is still available.",
-				"url": "https://markets.businessinsider.com/news/stocks/apple-foxconn-terry-gou-us-stock-market-crash-taiwan-war-2023-8",
-				"urlToImage": "https://i.insider.com/64cb1b3495fe1f0019df7f48?width=1200&format=jpeg",
-				"publishedAt": "2023-08-03T12:43:41Z",
-				"content": "Terry Gou, founder of Foxconn — a key supplier to Apple — warned of a US stock market collapse should war break out over Taiwan.Visual China Group/Getty Images)\r\n<ul>\n<li>Foxconn founder Terry Gou sa… [+2382 chars]"
-		},
-		
+
 	]
 }

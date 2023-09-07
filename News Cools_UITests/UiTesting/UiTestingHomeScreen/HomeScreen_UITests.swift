@@ -5,6 +5,7 @@
 //  Created by kenjimaeda on 30/08/23.
 //
 
+import Combine
 @testable import News_Cools
 import SnapshotTesting
 import SwiftUI
@@ -15,11 +16,19 @@ import XCTest
 
 // quando adioncar uma lib para test como o spashot ele precisa estar apenas no target de tests e não no principal
 
+
+// a partir da nova versão o xcode usa planos de tests que uma maneira mais simples de controlar configurações complexas de testss
+// apos qualquer alteração precisa salvar o arquivo
+// referencia https://emptytheory.com/2023/02/26/test-plans-are-now-default-for-new-projects-with-xcode-14-3/
+// na ultima solçução do stack flow
+// https://stackoverflow.com/questions/76192332/how-can-i-enable-code-coverage-in-xcode-14-3-it-appears-different-from-other-v
+
 final class News_Cools_UITests: XCTestCase {
   private var app: XCUIApplication!
 
   override func setUpWithError() throws {
     continueAfterFailure = false
+
     app = XCUIApplication()
     app.launchEnvironment = ["ENV": "TEST"]
     app.launch()
@@ -29,25 +38,16 @@ final class News_Cools_UITests: XCTestCase {
     app = nil
   }
 
-  // referencia https://github.com/tunds/SwiftUIiOSTakeHomeTest/blob/main/iOSTakeHomeProject/iOSTakeHomeProjectUITests/People/PeopleScreenUITests.swift
+  // referencia uitest
   func testListArticles() {
-    let predicateArticle = NSPredicate(format: "identifier == '\(TestsIdentifier.listArticles)'")
-    let list = app.descendants(matching: .any).matching(predicateArticle).firstMatch
-    let exists = list.waitForExistence(timeout: 5)
+    let (list, exists) = existsListArticles()
     XCTAssertTrue(exists)
-
-    let predicateRow = NSPredicate(format: "identifier CONTAINS '\(TestsIdentifier.rowArticles)_'")
-    // peguei imagem p/Users/kenjimaeda/Documents/projects_IOS/News Cools/News
-    // Cools_UITests/UiTesting/UiTestingHomeScreen/HomeScreen_UITests.swiftorque apenas possui uma imagem no
-    // predicateRow
-    let rows = list.images.containing(predicateRow)
-    XCTAssertEqual(rows.count, 2)
+    let rows = list.cells // testar celulas da list
+    XCTAssertEqual(rows.count, 5)
   }
 
   func testGridCategories() {
-    let predicateGrid = NSPredicate(format: "identifier == '\(TestsIdentifier.gridCategories)'")
-    let grid = app.descendants(matching: .any).matching(predicateGrid).firstMatch
-    let exists = grid.waitForExistence(timeout: 5)
+    let (grid, exists) = existsGridCategory()
     XCTAssert(exists)
 
     let predicateRow = NSPredicate(format: "identifier CONTAINS '\(TestsIdentifier.rowCategories)_'")
@@ -55,13 +55,37 @@ final class News_Cools_UITests: XCTestCase {
     XCTAssertEqual(rows.count, listCategoriesMock.count)
   }
 
-  func testValueTextFieldWhenTap() {
+  func testFilterArticlesWhenTapTextField() {
     let predicateTextField = NSPredicate(format: "identifier == '\(TestsIdentifier.textFieldSearchNews)'")
     let textField = app.descendants(matching: .any).matching(predicateTextField).firstMatch
     textField.tap()
     textField.typeText("Apple")
-
+    // ao digitar sera automaticamente chamado a função que esta no storeHome
     XCTAssertEqual(textField.value as? String, "Apple")
+
+    // para esse teste dar certo precisa fechar o teclado
+    // então apos digitar o texto e comparar se esta certo eu fecho ele
+    // precisa estar declarado no text field o tipo de botão que no caso e done
+    // .submitLabel(.done)
+    let returnButton = app.buttons["Done"]
+    returnButton.tap()
+
+    let (list, exists) = existsListArticles()
+    XCTAssertTrue(exists)
+    let rows = list.cells
+    XCTAssertEqual(rows.count, 3)
+  }
+
+  func testRequisitionofCategoryWhenSelectingAny() {
+    let (grid, exists) = existsGridCategory()
+    XCTAssert(exists)
+
+    let text = grid.staticTexts[listCategoriesMock[1].title].firstMatch
+    text.tap()
+    let (list, _) = existsListArticles()
+    let rows = list.cells
+
+    XCTAssertEqual(rows.count, 2)
   }
 
   // MARK: - Teste snashopt
@@ -84,8 +108,25 @@ final class News_Cools_UITests: XCTestCase {
   }
 
   func testSnapshotRowCategories() {
-    let rowView = RowToCategories(category: listCategoriesMock[0])
+    let rowView = RowToCategories(category: listCategoriesMock[0], categoryIdSelected: listCategoriesMock[0].id)
     let view: UIView = UIHostingController(rootView: rowView).view
     assertSnapshot(of: view, as: .image)
+  }
+}
+
+extension News_Cools_UITests {
+  func existsListArticles() -> (view: XCUIElement, exists: Bool) {
+    let predicateArticle = NSPredicate(format: "identifier == '\(TestsIdentifier.listArticles)'")
+    let list = app.descendants(matching: .any).matching(predicateArticle).firstMatch
+    let exists = list.waitForExistence(timeout: 5)
+
+    return (list, exists)
+  }
+
+  func existsGridCategory() -> (view: XCUIElement, exists: Bool) {
+    let predicateGrid = NSPredicate(format: "identifier == '\(TestsIdentifier.gridCategories)'")
+    let grid = app.descendants(matching: .any).matching(predicateGrid).firstMatch
+    let exists = grid.waitForExistence(timeout: 5)
+    return (grid, exists)
   }
 }

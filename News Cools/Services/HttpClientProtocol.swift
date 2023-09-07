@@ -7,6 +7,18 @@
 
 import Foundation
 
+enum HttpError: Error {
+  case badURL, badResponse, errorEncodingData, noData, invalidURL, invalidRequest
+}
+
 protocol HttpClientProtocol {
-  func fetch<T: Codable>(urlString: String) async throws -> T
+  func fetchAllArticles(completion: @escaping (Result<[ArticlesIdentifiableModel], HttpError>) -> Void)
+  func fetchSearchArticles(
+    search: String,
+    completion: @escaping (Result<[ArticlesIdentifiableModel], HttpError>) -> Void
+  )
+  func fetchCategoryArticles(
+    category: String,
+    completion: @escaping (Result<[ArticlesIdentifiableModel], HttpError>) -> Void
+  )
 }

@@ -10,15 +10,8 @@ import SwiftUI
 struct HomeScreen: View {
   @FocusState private var focusTextFieldSearch: Bool
   @State private var searchArticles = ""
-  @StateObject var servicesArticles = TopArticlesServices(client: HttpClientFactory.create())
-
-  func handleSearchArticles(_ newValue: String) {
-    Task {
-      if searchArticles.count > 3 && searchArticles.count % 4 == 0 {
-        await servicesArticles.fetchSearchArticles(search: newValue)
-      }
-    }
-  }
+  @ObservedObject private var storeHome = StoreHome(httpClient: HttpClientFactory.create())
+  @State private var categorySelected = listCategoriesMock[0].id
 
   var body: some View {
     VStack(alignment: .leading, spacing: 0) {
@@ -48,12 +41,15 @@ struct HomeScreen: View {
 
           axis: .vertical
         )
-        .onChange(of: searchArticles, perform: handleSearchArticles)
-        .padding(EdgeInsets(top: 5, leading: 35, bottom: 5, trailing: 15))
+        .onChange(of: searchArticles) { value in
+          storeHome.handleSearchArticles(valueSearch: value, valueInput: searchArticles)
+        }
+        .padding(EdgeInsets(top: 7, leading: 35, bottom: 7, trailing: 15))
         .background(
           RoundedRectangle(cornerRadius: 5)
             .stroke(ColorsApp.black100.opacity(0.5), lineWidth: 1)
         )
+        .submitLabel(.done)
         .focused($focusTextFieldSearch)
         .accessibilityIdentifier(TestsIdentifier.textFieldSearchNews)
       }
@@ -67,8 +63,15 @@ struct HomeScreen: View {
       ScrollView(.horizontal, showsIndicators: false) {
         LazyHGrid(rows: gridItemExplore) {
           ForEach(listCategoriesMock) { categorie in
-            RowToCategories(category: categorie)
+            RowToCategories(category: categorie, categoryIdSelected: categorySelected)
               .accessibilityIdentifier("\(TestsIdentifier.rowCategories)_\(categorie.id)")
+              .gesture(
+                TapGesture()
+                  .onEnded { _ in
+                    storeHome.handleTapCategory(categorie.title)
+                    categorySelected = categorie.id
+                  }
+              )
           }
         }
         .accessibilityIdentifier(TestsIdentifier.gridCategories)
@@ -81,9 +84,9 @@ struct HomeScreen: View {
         .foregroundColor(ColorsApp.white)
         .padding(EdgeInsets(top: 10, leading: 13, bottom: 10, trailing: 13))
 
-      switch servicesArticles.loading {
+      switch storeHome.loading {
       case .success:
-        List(servicesArticles.articles) { topArticles in
+        List(storeHome.articles) { topArticles in
           if topArticles.articles.title != nil && topArticles.articles.title != "[Removed]" && topArticles.articles
             .urlToImage != nil
           {
@@ -92,7 +95,6 @@ struct HomeScreen: View {
               .listRowSeparator(.hidden)
               // hacker pra deixar o background transparente das rows
               .listRowBackground(ColorsApp.primary.opacity(0.0))
-              .accessibilityIdentifier("\(TestsIdentifier.rowArticles)_\(topArticles.id)")
           }
         }
         .listStyle(.inset)
@@ -111,9 +113,12 @@ struct HomeScreen: View {
     .scrollBounceBehavior(.basedOnSize)
     .scrollContentBackground(.hidden)
     .background(ColorsApp.primary, ignoresSafeAreaEdges: .all)
-    .task {
-      await servicesArticles.fetchAllArticles()
+    .onAppear {
+      storeHome.fetchArticles()
     }
+    // .task {
+    // await storeHome.fetchArticles()
+    // }
   }
 }
 
