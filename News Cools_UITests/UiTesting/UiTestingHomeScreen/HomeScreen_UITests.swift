@@ -16,8 +16,8 @@ import XCTest
 
 // quando adioncar uma lib para test como o spashot ele precisa estar apenas no target de tests e não no principal
 
-
-// a partir da nova versão o xcode usa planos de tests que uma maneira mais simples de controlar configurações complexas de testss
+// a partir da nova versão o xcode usa planos de tests que uma maneira mais simples de controlar configurações complexas
+// de testss
 // apos qualquer alteração precisa salvar o arquivo
 // referencia https://emptytheory.com/2023/02/26/test-plans-are-now-default-for-new-projects-with-xcode-14-3/
 // na ultima solçução do stack flow

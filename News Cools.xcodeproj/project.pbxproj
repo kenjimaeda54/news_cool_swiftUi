@@ -66,6 +66,8 @@
 		81CA118A2A9D45DD00CBD092 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA11892A9D45DD00CBD092 /* Fonts.swift */; };
 		81CA11902A9D49FF00CBD092 /* TopArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA118F2A9D49FF00CBD092 /* TopArticlesModel.swift */; };
 		81CA11932A9D4B2500CBD092 /* topArticlesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA11922A9D4B2500CBD092 /* topArticlesMock.swift */; };
+		81CA77A92AAA31AE001ED869 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA77A82AAA31AE001ED869 /* WebView.swift */; };
+		81CA77AB2AAA3276001ED869 /* DetailsArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA77AA2AAA3276001ED869 /* DetailsArticles.swift */; };
 		81CAC3772AA20B2A000B8C12 /* TopArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = 81039EF02A9FE3FC00B7F29C /* TopArticles.json */; };
 		81CAC37B2AA21653000B8C12 /* MockHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC37A2AA21653000B8C12 /* MockHttpClient.swift */; };
 		81CAC37D2AA216D5000B8C12 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAC37C2AA216D5000B8C12 /* Mockable.swift */; };
@@ -137,6 +139,8 @@
 		81CA118F2A9D49FF00CBD092 /* TopArticlesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArticlesModel.swift; sourceTree = "<group>"; };
 		81CA11922A9D4B2500CBD092 /* topArticlesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topArticlesMock.swift; sourceTree = "<group>"; };
 		81CA77A62AA9FECE001ED869 /* News Cools.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "News Cools.xctestplan"; sourceTree = "<group>"; };
+		81CA77A82AAA31AE001ED869 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		81CA77AA2AAA3276001ED869 /* DetailsArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsArticles.swift; sourceTree = "<group>"; };
 		81CAC37A2AA21653000B8C12 /* MockHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHttpClient.swift; sourceTree = "<group>"; };
 		81CAC37C2AA216D5000B8C12 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
 		81CAC37E2AA21825000B8C12 /* HttpClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientProtocol.swift; sourceTree = "<group>"; };
@@ -248,13 +252,6 @@
 			path = RowToCategoriesTest;
 			sourceTree = "<group>";
 		};
-		81AF12272A9E055D007DE143 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		81AF12282A9E05EF007DE143 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,14 +295,13 @@
 		81C067A82A9D3BC100869C68 /* News Cools */ = {
 			isa = PBXGroup;
 			children = (
+				81CA77A72AAA319A001ED869 /* Representable */,
 				8103926F2AA8917700948656 /* Factory */,
 				81C9AB8C2AA7F1DF00D6E555 /* Store */,
 				81AF12282A9E05EF007DE143 /* Modifiers */,
 				81C9AB862AA7AD4600D6E555 /* ViewModel */,
-				81CAC3712AA2089A000B8C12 /* Factories */,
 				81039EEB2A9FDD3B00B7F29C /* Services */,
 				81AF122B2A9E16D8007DE143 /* Utility */,
-				81AF12272A9E055D007DE143 /* Extensions */,
 				81CA11912A9D4AF700CBD092 /* Mock */,
 				81CA118D2A9D47CC00CBD092 /* Views */,
 				81CA118C2A9D47C600CBD092 /* Models */,
@@ -375,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				81C067AB2A9D3BC100869C68 /* HomeScreen.swift */,
+				81CA77AA2AAA3276001ED869 /* DetailsArticles.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -408,11 +405,12 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
-		81CAC3712AA2089A000B8C12 /* Factories */ = {
+		81CA77A72AAA319A001ED869 /* Representable */ = {
 			isa = PBXGroup;
 			children = (
+				81CA77A82AAA31AE001ED869 /* WebView.swift */,
 			);
-			path = Factories;
+			path = Representable;
 			sourceTree = "<group>";
 		};
 		81CAC3872AA25E7C000B8C12 /* Mocks */ = {
@@ -641,6 +639,8 @@
 				81C9AB8F2AA7F44B00D6E555 /* StoreHome.swift in Sources */,
 				81CAC3822AA219EF000B8C12 /* HttpClient.swift in Sources */,
 				81AF122F2A9E172C007DE143 /* listCategoriesMock.swift in Sources */,
+				81CA77AB2AAA3276001ED869 /* DetailsArticles.swift in Sources */,
+				81CA77A92AAA31AE001ED869 /* WebView.swift in Sources */,
 				81CA116E2A9D43DC00CBD092 /* Colors.swift in Sources */,
 				8120FBF02A9F662F0016F335 /* RedactAndShimerView.swift in Sources */,
 				81AF12312A9E1851007DE143 /* Constants.swift in Sources */,
