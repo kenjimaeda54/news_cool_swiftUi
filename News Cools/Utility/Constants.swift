@@ -21,4 +21,7 @@ enum TestsIdentifier {
   static var listArticles = "listArticles"
   static var gridCategories = "gridCategories"
   static var textFieldSearchNews = "textFieldSearchNews"
+  static var urlWebViewDetailsScreen =
+    "https://www.cnn.com/2023/08/29/politics/francis-suarez-ends-president-campaign-republican/index.html"
+  static var backButtonDetailsScreen = "backButtonDetailsScreen"
 }

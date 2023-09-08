@@ -13,6 +13,7 @@ struct HomeScreen: View {
   @ObservedObject private var storeHome = StoreHome(httpClient: HttpClientFactory.create())
   @State private var categorySelected = listCategoriesMock[0].id
   @State private var isNavigate = false
+  @State private var cardUrlSelected = ""
 
   var body: some View {
     NavigationStack {
@@ -99,9 +100,10 @@ struct HomeScreen: View {
                 .listRowBackground(ColorsApp.primary.opacity(0.0))
                 .onTapGesture {
                   isNavigate = true
+                  cardUrlSelected = topArticles.articles.url!
                 }
                 .navigationDestination(isPresented: $isNavigate) {
-                  DetailsArticles(urlString: topArticles.articles.url!)
+                  DetailsArticles(urlString: cardUrlSelected)
                     .navigationBarBackButtonHidden(true)
                 }
             }

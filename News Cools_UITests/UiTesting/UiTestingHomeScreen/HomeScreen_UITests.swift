@@ -23,7 +23,7 @@ import XCTest
 // na ultima solçução do stack flow
 // https://stackoverflow.com/questions/76192332/how-can-i-enable-code-coverage-in-xcode-14-3-it-appears-different-from-other-v
 
-final class News_Cools_UITests: XCTestCase {
+final class HomeScreen_UITests: XCTestCase {
   private var app: XCUIApplication!
 
   override func setUpWithError() throws {
@@ -114,7 +114,7 @@ final class News_Cools_UITests: XCTestCase {
   }
 }
 
-extension News_Cools_UITests {
+extension HomeScreen_UITests {
   func existsListArticles() -> (view: XCUIElement, exists: Bool) {
     let predicateArticle = NSPredicate(format: "identifier == '\(TestsIdentifier.listArticles)'")
     let list = app.descendants(matching: .any).matching(predicateArticle).firstMatch

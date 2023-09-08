@@ -62,8 +62,8 @@
             filePath = "News Cools/Screens/HomeScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
             landmarkName = "previews"
             landmarkType = "24">
             <Locations>
@@ -155,10 +155,10 @@
             filePath = "News Cools/Screens/HomeScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "ContentView_Previews"
-            landmarkType = "14">
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "previews"
+            landmarkType = "24">
             <Locations>
                <Location
                   uuid = "1318E9C6-11DE-4434-AB8C-F29DB5225F31 - dbe9d0817fb09c62"
@@ -592,8 +592,8 @@
             filePath = "News Cools/Screens/HomeScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -750,8 +750,8 @@
             filePath = "News Cools/Screens/HomeScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -798,8 +798,8 @@
             filePath = "News Cools/Screens/HomeScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -1392,8 +1392,8 @@
             filePath = "News Cools/Screens/HomeScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139">
+            startingLineNumber = "141"
+            endingLineNumber = "141">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1406,8 +1406,8 @@
             filePath = "News Cools/Screens/HomeScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -1750,6 +1750,36 @@
                   endingLineNumber = "30"
                   offsetFromSymbolStart = "116">
                </Location>
+               <Location
+                  uuid = "D80F5F0F-1AA7-4D3A-AB6E-E7C1A5708EB6 - f00566c84b864f89"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "News_Cools_UITests.MockHttpClient.fetchSearchArticles(search: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;News_Cools_UITests.ArticlesIdentifiableModel&gt;, News_Cools_UITests.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "News Cools_UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/News%20Cools/News%20Cools_UITests/Mocks/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "D80F5F0F-1AA7-4D3A-AB6E-E7C1A5708EB6 - c0552ed20c0795ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "News_Cools.MockHttpClient.fetchSearchArticles(search: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;News_Cools.ArticlesIdentifiableModel&gt;, News_Cools.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "News Cools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/News%20Cools/News%20Cools_UITests/Mocks/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "100">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1813,6 +1843,36 @@
                   endingLineNumber = "30"
                   offsetFromSymbolStart = "116">
                </Location>
+               <Location
+                  uuid = "EDD43BE4-627C-48D5-B6EA-6E964E473ED3 - f00566c84b864f89"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "News_Cools_UITests.MockHttpClient.fetchSearchArticles(search: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;News_Cools_UITests.ArticlesIdentifiableModel&gt;, News_Cools_UITests.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "News Cools_UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/News%20Cools/News%20Cools_UITests/Mocks/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "EDD43BE4-627C-48D5-B6EA-6E964E473ED3 - c0552ed20c0795ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "News_Cools.MockHttpClient.fetchSearchArticles(search: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;News_Cools.ArticlesIdentifiableModel&gt;, News_Cools.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "News Cools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/News%20Cools/News%20Cools_UITests/Mocks/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "100">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1830,6 +1890,38 @@
             endingLineNumber = "88"
             landmarkName = "handleTapCategory(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "86B2F8AE-3C8B-4763-ADE4-9040799C8959 - 78a53a57c0a28437"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "News_Cools_UITests.StoreHome.handleTapCategory(Swift.String) -&gt; ()"
+                  moduleName = "News Cools_UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/News%20Cools/News%20Cools/Store/StoreHome.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "86B2F8AE-3C8B-4763-ADE4-9040799C8959 - 298c425c13d69d9f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "News_Cools.StoreHome.handleTapCategory(Swift.String) -&gt; ()"
+                  moduleName = "News Cools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/News%20Cools/News%20Cools/Store/StoreHome.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1894,13 +1986,45 @@
             endingLineNumber = "65"
             landmarkName = "fetchArticlesByCategory(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0AA4FFC1-41E7-4458-A8D0-4CA2EC26E207 - faef09890efeafde"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;News_Cools_UITests.ArticlesIdentifiableModel&gt;, News_Cools_UITests.HttpError&gt;) -&gt; () in News_Cools_UITests.StoreHome.fetchArticlesByCategory(Swift.String) -&gt; ()"
+                  moduleName = "News Cools_UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/News%20Cools/News%20Cools/Store/StoreHome.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "248">
+               </Location>
+               <Location
+                  uuid = "0AA4FFC1-41E7-4458-A8D0-4CA2EC26E207 - 59fdedf25d1d223c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;News_Cools.ArticlesIdentifiableModel&gt;, News_Cools.HttpError&gt;) -&gt; () in News_Cools.StoreHome.fetchArticlesByCategory(Swift.String) -&gt; ()"
+                  moduleName = "News Cools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/News%20Cools/News%20Cools/Store/StoreHome.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "248">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "7DC5D5F3-9DE2-4EBE-B7C4-32CC1A713DBB"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "News Cools/Views/RowToCategories.swift"
@@ -1908,6 +2032,182 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "7DC5D5F3-9DE2-4EBE-B7C4-32CC1A713DBB - 6b40e74af8919672"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "News_Cools_UITests.RowToCategories.body.getter : some"
+                  moduleName = "News Cools_UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/News%20Cools/News%20Cools/Views/RowToCategories.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "624">
+               </Location>
+               <Location
+                  uuid = "7DC5D5F3-9DE2-4EBE-B7C4-32CC1A713DBB - ee6409f2448b8242"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "News_Cools.RowToCategories.body.getter : some"
+                  moduleName = "News Cools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/News%20Cools/News%20Cools/Views/RowToCategories.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "624">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90884DC6-E6CE-4765-983A-98AA52E5E655"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "News Cools_UITests/UiTesting/UiTestingDetailsScreen/DetailsScreen_UITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "testNavigationAndLoadCorrectUrlWebViewDetailsScreen()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07EB1891-DB16-4913-85EE-5A7CFAAAC5B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "News Cools/Representable/WebView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "updateUIView(_:context:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "028A2876-1E11-4B16-A268-6D1A495F9373"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "News Cools/Representable/WebView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "updateUIView(_:context:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B413986-0EFF-457D-A088-33BB142EF025"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "News Cools/Representable/WebView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "WebView"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8FD76638-D8F1-4C40-BDC4-B3DEFB0483CF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "News Cools/Screens/HomeScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "557DCA78-CFD9-4B9F-856E-4C1477FD4F56"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "News Cools/Screens/HomeScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "557DCA78-CFD9-4B9F-856E-4C1477FD4F56 - cd15b92c68a12fd7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.EdgeInsets) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.EdgeInsets) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.EdgeInsets) -&gt; some&gt;&gt;.0, SwiftUI._ConditionalContent&lt;SwiftUI._ConditionalContent&lt;SwiftUI.ModifiedContent&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.EdgeInsets) -&gt; some&gt;&gt;.0, SwiftUI.AccessibilityAttachmentModifier&gt;, News_Cools.PlaceHolderListArticles&gt;, SwiftUI.Text&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0 in News_Cools.HomeScreen.body.getter : some"
+                  moduleName = "News Cools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/News%20Cools/News%20Cools/Screens/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "3588">
+               </Location>
+               <Location
+                  uuid = "557DCA78-CFD9-4B9F-856E-4C1477FD4F56 - 698af9116a48d390"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (News_Cools.ArticlesIdentifiableModel) -&gt; Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.navigationDestination&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, destination: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.EdgeInsets) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.EdgeInsets) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.EdgeInsets) -&gt; some&gt;&gt;.0, SwiftUI._ConditionalContent&lt;SwiftUI._ConditionalContent&lt;SwiftUI.ModifiedContent&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.EdgeInsets) -&gt; some&gt;&gt;.0, SwiftUI.AccessibilityAttachmentModifier&gt;, News_Cools.PlaceHolderListArticles&gt;, SwiftUI.Text&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0 in News_Cools.HomeScreen.body.getter : some"
+                  moduleName = "News Cools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/News%20Cools/News%20Cools/Screens/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "520">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D77B4834-E031-4DF1-BE88-A67270BF7A60"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "News Cools/Screens/HomeScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>

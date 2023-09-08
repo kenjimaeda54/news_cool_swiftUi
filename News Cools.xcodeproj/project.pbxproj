@@ -82,6 +82,9 @@
 		81CAC38C2AA26933000B8C12 /* ExploreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF12322A9E1918007DE143 /* ExploreModel.swift */; };
 		81CAC38D2AA26BF8000B8C12 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF12302A9E1851007DE143 /* Constants.swift */; };
 		81CD133A2AA02337001F1855 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81039EFC2AA0111C00B7F29C /* LoadingState.swift */; };
+		81FDEA7A2AAA3ADB001D971A /* DetailsArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA77AA2AAA3276001ED869 /* DetailsArticles.swift */; };
+		81FDEA7C2AAA3AEE001D971A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA77A82AAA31AE001ED869 /* WebView.swift */; };
+		81FDEA7F2AAA3B6A001D971A /* DetailsScreen_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FDEA7E2AAA3B6A001D971A /* DetailsScreen_UITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +149,7 @@
 		81CAC37E2AA21825000B8C12 /* HttpClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientProtocol.swift; sourceTree = "<group>"; };
 		81CAC3812AA219EF000B8C12 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		81CAC3882AA267C7000B8C12 /* FunctionsHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsHelpers.swift; sourceTree = "<group>"; };
+		81FDEA7E2AAA3B6A001D971A /* DetailsScreen_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreen_UITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +202,7 @@
 		815C86982AA5E6E9001A9483 /* UiTesting */ = {
 			isa = PBXGroup;
 			children = (
+				81FDEA7D2AAA3B3E001D971A /* UiTestingDetailsScreen */,
 				815C869F2AA5F8BF001A9483 /* UiTestingHomeScreen */,
 			);
 			path = UiTesting;
@@ -425,6 +430,14 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		81FDEA7D2AAA3B3E001D971A /* UiTestingDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				81FDEA7E2AAA3B6A001D971A /* DetailsScreen_UITests.swift */,
+			);
+			path = UiTestingDetailsScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -606,16 +619,19 @@
 				81CAC37B2AA21653000B8C12 /* MockHttpClient.swift in Sources */,
 				81CAC3802AA219C1000B8C12 /* HttpClientProtocol.swift in Sources */,
 				819885592AA2AA1300711225 /* RowToCategories.swift in Sources */,
+				81FDEA7A2AAA3ADB001D971A /* DetailsArticles.swift in Sources */,
 				815C869C2AA5F17C001A9483 /* HomeScreen.swift in Sources */,
 				81CAC38D2AA26BF8000B8C12 /* Constants.swift in Sources */,
 				81CAC3862AA21ECB000B8C12 /* HttpClient.swift in Sources */,
 				8198855C2AA2AB4A00711225 /* Shimmer.swift in Sources */,
 				819885492AA27BA300711225 /* FontWithLineHeight.swift in Sources */,
+				81FDEA7C2AAA3AEE001D971A /* WebView.swift in Sources */,
 				81CD133A2AA02337001F1855 /* LoadingState.swift in Sources */,
 				81CAC38C2AA26933000B8C12 /* ExploreModel.swift in Sources */,
 				819885442AA27AEC00711225 /* HomeScreen_UITests.swift in Sources */,
 				810392722AA892D300948656 /* HttpClientFactory.swift in Sources */,
 				819885462AA27B7B00711225 /* RowToArticles.swift in Sources */,
+				81FDEA7F2AAA3B6A001D971A /* DetailsScreen_UITests.swift in Sources */,
 				8198855A2AA2AA8F00711225 /* PlaceHolders.swift in Sources */,
 				81C9AB902AA7FD4600D6E555 /* StoreHome.swift in Sources */,
 				811D8A2B2AA0AAA200FDFBA5 /* ArticlesIdentifiableModel.swift in Sources */,

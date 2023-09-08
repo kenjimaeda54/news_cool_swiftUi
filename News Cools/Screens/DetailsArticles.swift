@@ -29,8 +29,10 @@ struct DetailsArticles: View {
               ColorsApp.black100
             )
         }
+        .accessibilityIdentifier(TestsIdentifier.backButtonDetailsScreen)
       }
     }
+    .accessibilityIdentifier("DetailsScreen_\(urlString)")
   }
 }
 
