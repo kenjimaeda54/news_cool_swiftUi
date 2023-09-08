@@ -307,7 +307,7 @@ class StoreHome: ObservableObject {
 - Assim  garanto que ao digitar algo no text field iria filtra a lista conforme os mocks que determinei, nesse caso era arquivo de mock FilterArticles que possui 3 dados
 - Quando usa tap gesture em suas views pode simples dar match com um texto ou a view, o tap que ira funcionar, já que o gesture dá acesso a tap
 
-```swfit
+```swift
 func testFilterArticlesWhenTapTextField() {
     let predicateTextField = NSPredicate(format: "identifier == '\(TestsIdentifier.textFieldSearchNews)'")
     let textField = app.descendants(matching: .any).matching(predicateTextField).firstMatch
