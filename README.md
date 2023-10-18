@@ -348,5 +348,7 @@ RowToCategories(category: categorie, categoryIdSelected: categorySelected)
 
 ```
 
+## Publicação
+[Linkedin](https://www.linkedin.com/posts/kenjimaeda1233_test-github-ios-activity-7105884628946669568-hmiL?utm_source=share&utm_medium=member_desktop)
 
 
