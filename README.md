@@ -1,6 +1,10 @@
 # News Cools
 App simples onde consulta as notícias recentes dos EUA,   noticias anteriores a um mês do dia atual e selecionar por categorias
 
+## Motivação
+Aprender mais sobre uso de testes em Swiftui
+
+
 ## Feature
 - Usei novamente o protocolo Representable, nele e possível usarmos um UKIT em Swiftui
 - Precisei deste recurso para renderizar web view
